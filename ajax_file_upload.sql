@@ -1,0 +1,87 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 25, 2019 at 12:41 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ajax_file_upload`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `image`
+--
+
+CREATE TABLE `image` (
+  `id` int(11) NOT NULL,
+  `img` varchar(100) NOT NULL,
+  `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `image`
+--
+
+INSERT INTO `image` (`id`, `img`, `created_on`) VALUES
+(1, '1212121.jpg', '2019-08-23 19:28:47'),
+(2, '1212121.jpg', '2019-08-23 19:32:51'),
+(3, '1212121.jpg', '2019-08-23 19:34:27'),
+(4, '1566589704-1566589704.png', '2019-08-23 19:48:24'),
+(5, '1566589801-1566589801.rar', '2019-08-23 19:50:01'),
+(6, '1566589877-1566589877.sql', '2019-08-23 19:51:17'),
+(7, '1566589899-1566589899.png', '2019-08-23 19:51:39'),
+(8, '1566590027-1566590027.png', '2019-08-23 19:53:47'),
+(9, '1566590264-1566590264.png', '2019-08-23 19:57:44'),
+(10, '1566590430-1566590430.gif', '2019-08-23 20:00:30'),
+(11, '1566590484-1566590484.jpg', '2019-08-23 20:01:24'),
+(12, '1566590882-1566590882.png', '2019-08-23 20:08:02'),
+(13, '1566590942-1566590942.png', '2019-08-23 20:09:02'),
+(14, '1566591071-1566591071.png', '2019-08-23 20:11:11'),
+(15, '1566591115-1566591115.png', '2019-08-23 20:11:55'),
+(16, '1566591120-1566591120.png', '2019-08-23 20:12:00'),
+(17, '1566725889-1566725889.png', '2019-08-25 09:38:09'),
+(18, '1566726262-1566726262.png', '2019-08-25 09:44:22'),
+(19, '1566728250-1566728250.png', '2019-08-25 10:17:30'),
+(20, '1566728407-1566728407.jpg', '2019-08-25 10:20:07'),
+(21, '1566728654-1566728654.jpg', '2019-08-25 10:24:14');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `image`
+--
+ALTER TABLE `image`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `image`
+--
+ALTER TABLE `image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
